@@ -21,4 +21,4 @@ const db = mongoose.connection
 db.on('error',error => console.error(error))
 db.on('open',error => console.error('connected to Mongoose'))
 app.use('/', indexRouter)
-app.listen(process.env.port || 3000 )
+app.listen(process.env.PORT || 3000 )
